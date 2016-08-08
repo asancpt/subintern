@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "PK = read.csv(\"Xproject_Final Parameters Pivoted.csv\")\nPKWhatWeNeed = data.frame(PK$ID, PK$AUClast, PK$AUCINF_obs, PK$Cmax, PK$Tmax, PK$Lambda_z, PK$Cl_F_obs, PK$Vz_F_obs, PK$MRTlast)\nwrite.csv(PKWhatWeNeed, \"Xproject_Final_for_Word.csv\", row.names = FALSE)\nplot(PKWhatWeNeed$PK.Cmax)\n",
+    "created" : 1470192034561.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3756913363",
+    "id" : "D6962818",
+    "lastKnownWriteTime" : 1470278591,
+    "last_content_update" : 1470278591372,
+    "path" : "D:/Subintern/WNL/Xproject.R",
+    "project_path" : "Xproject.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,18 +1,17 @@
-# 불러오기
-
+# Loading
 setwd("D:/Subintern/WNL")
 PKRaw = read.csv("Drug_X_PK.csv")
 
 # There's missing ID so we implemented this code.
 UniID = unique(PKRaw$ID)
 
-# 1st 대상자에 대한 그림
+# Base plot
 for (i in 1:length(UniID)){
   PKRaw01 = PKRaw[PKRaw$ID == UniID[i], ]
   plot(PKRaw01$TIME, PKRaw01$DV, main = paste("SUBJID ", UniID[i], sep = ""))
 }
 
-# ggplot
+# ggplot2
 library(ggplot2)
 
 for (i in 1:length(UniID)){

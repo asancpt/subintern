@@ -18,7 +18,7 @@ library(ggplot2)
 for (i in 1:2){ #length(UniID)){
   PKRaw01 = PKRaw[PKRaw$ID == UniID[i], ]
   FINAL = ggplot(PKRaw01, aes(x = TIME, y = DV)) + geom_point() + geom_line() + ggtitle(paste("SUBJID ", UniID[i], sep = ""))
-  plot(FINAL)}
+  plot(FINAL)
   # ggsave(filename = paste0("Figures/SUBJID",UniID[i], ".jpg"), FINAL)
 }
 
@@ -29,5 +29,5 @@ for (i in 1:length(UniID)){
   # ggsave(filename = paste0("Figures/SUBJID",UniID[i], ".jpg"), FINAL)
 }
 
-# yì¶? ë²”ìœ„ë¥? ê³ ì •?•  ê²?. xì¶? yì¶? TIME -> label Time (hour), DV -> Concentration (ug/L)
-# Title?— Dose ? •ë³´ë?? ?‚½?ž… SUBJID ? (~~ mg)
+# y??? ë²”ìœ„??? ê³ ì •??? ???. x??? y??? TIME -> label Time (hour), DV -> Concentration (ug/L)
+# Title??? Dose ???ë³´??? ?????? SUBJID ? (~~ mg)

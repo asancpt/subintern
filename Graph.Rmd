@@ -2,7 +2,7 @@
 title: "AMC Subintern 2016 report"
 author: "AMC Subintern"
 date: "2016년 8월 11일"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}

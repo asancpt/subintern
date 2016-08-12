@@ -9,7 +9,6 @@ Subinterns will work on projects regarding
 * clinical trial PK analysis
 
 ## Participants
-* [한성필 shanmdphd](https://github.com/shanmdphd)
 * [이종희 jennylee9085](https://github.com/jennylee9085)
 * [어지안 harooyan94](https://github.com/harooyan94)
 

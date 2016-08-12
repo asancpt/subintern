@@ -14,3 +14,9 @@ Subinterns will work on projects regarding
 
 ## Period
 * 2016-08-01 - 2016-08-12
+
+## Final Presentation
+* [Jennylee9085 - Cardiovascular pharmacogenomics](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)
+* [harooyan94 - 
+Pharmacogenetics of CYP2D6 and Tamoxifen therapy](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)
+

@@ -1,10 +1,8 @@
 # Loading
-#setwd("D:/AMC")
-setwd("D:/Subintern/WNL")
-PKRaw = read.csv("Drug_X_PK.csv")
+PKRaw <- read.csv('data-raw/assay/Drug_X_PK.csv', stringsAsFactors = FALSE)
 
 # There's missing ID so we implemented this code.
-UniID = unique(PKRaw$ID)
+UniID <- unique(PKRaw$ID)
 
 # Base plot
 for (i in 1:length(UniID)){
@@ -13,14 +11,14 @@ for (i in 1:length(UniID)){
   lines(PKRaw01$TIME, PKRaw01$DV, type="l")
 }
 
-# ggplot2 - saves png files in "ggplotfigs" folder.
+# ggplot2 - saves png files in "assets/pk" folder.
 library(ggplot2)
 
 for (i in 1:length(UniID)){
   PKRaw01 = PKRaw[PKRaw$ID == UniID[i], ]
   FINAL = ggplot(PKRaw01, aes(x = TIME, y = DV)) + geom_point() + geom_line() + ggtitle(paste0("SUBJID ", UniID[i], sep=" ", PKRaw01$Drug[1], "mg")) + xlab("Time (hour)") + ylab("Concentration (ug/L)") + expand_limits(y=c(0,200))
   plot(FINAL)
-  ggsave(filename = paste0("ggplotfigs/SUBJID", UniID[i], ".png"), FINAL)
+  ggsave(filename = paste0("assets/pk/SUBJID", UniID[i], ".png"), FINAL)
 }
 
 # data analysis
@@ -73,28 +71,30 @@ DosePK = PKRaw %>%
 # -> this result will be used to draw plot.
 colnames(DosePK)
 
-
 library(tidyr)
 TidyDosePK = gather(DosePK, key = PARAMETER, VALUE, Tmax.Mean:Cmax.Mean)
 ggplot(TidyDosePK) +
   geom_point(mapping = aes(x = Drug, y = VALUE, color = PARAMETER)) +
   geom_line(mapping = aes(x = Drug, y = VALUE, color = PARAMETER))
 
-
 # for fun (PK)
+
 PK = read.csv("Xproject_Final Parameters Pivoted.csv") # WNL
 TidyPK = gather(PK, WNLPARAMTER, WNLVALUE, 2:dim(PK)[2])
 ggplot(TidyPK) +
   geom_point(mapping = aes(x = ID, y = WNLVALUE, color = WNLPARAMTER)) +
   geom_line(mapping = aes(x = ID, y = WNLVALUE, color = WNLPARAMTER))
 
-
-
-
-
 # ggplot2 - put all data in a single plot
 
-PKRaw01 = PKRaw[PKRaw$ID == UniID[i], ]
-FINAL = ggplot(PKRaw01, aes(x = TIME, y = DV)) + geom_point() + geom_line() + ggtitle(paste0("SUBJID ", UniID[i], sep=" ", PKRaw01$Drug[1], "mg")) + xlab("Time (hour)") + ylab("Concentration (ug/L)") + expand_limits(y=c(0,200))
-plot(FINAL)
-ggsave(filename = paste0("ggplotfigs/SUBJID", UniID[i], ".png"), FINAL)
+PKRaw01 <- PKRaw[PKRaw$ID == UniID[i], ]
+FINAL <- ggplot(PKRaw01, aes(x = TIME, y = DV)) + 
+  geom_point() + 
+  geom_line() + 
+  ggtitle(paste0("SUBJID ", UniID[i], sep=" ", PKRaw01$Drug[1], "mg")) + 
+  xlab("Time (hour)") + 
+  ylab("Concentration (ug/L)") + 
+  expand_limits(y=c(0,200))
+FINAL
+
+ggsave(filename = paste0("assets/pk/SUBJID", UniID[i], ".png"), FINAL)

@@ -63,6 +63,7 @@ Writing medical papers can be done by Rmarkdown as well as using [Endnote](http:
 | 조하혜 | 카페라떼 | 3500원 |
 | 한성필 | 녹차라떼 | 4000원 |
 | 배균섭 | 케이크 | 14000원 |
+| 임형석 | 아이스아메리카노 | 3000원 |
 
 So now we learned several things.
 

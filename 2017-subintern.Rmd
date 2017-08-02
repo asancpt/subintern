@@ -1,11 +1,13 @@
 ---
 title: "How to use R markdown"
 author: "AMC Subintern"
-date: "2017-08-02"
-bibliography: "references/myref.bib"
-output: 
+date: '2017-08-02'
+output:
+  word_document:
+    toc: yes
   html_document:
     toc: yes
+bibliography: references/myref.bib
 ---
 
 # Introduction

@@ -9,7 +9,7 @@
 * Clinical trial PK analysis
 * (Optional) Rstudio <https://www.rstudio.com/>
 * (Optional) Github <https://github.com>
-
+* Data Science Fun R, 파이썬(Python), 데이터 과학 이야기 <https://dataninja.me>
 마지막에 논문 발표를 하게 됩니다.
 
 ## Subintern 2017

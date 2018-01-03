@@ -20,12 +20,12 @@
 
 ### Participants
 
-* 최민아
-* 현태환
-* 최광희
-* 박현수
-* 박유라
-* 최백용
+* 최민아 minah1029
+* 현태환 hyuntaehwan
+* 최광희 nanckh
+* 박현수 phs911221
+* 박유라 yurapark
+* 최백용 revolugene
 
 ## Subintern 2017
 

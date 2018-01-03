@@ -9,12 +9,27 @@
 * Clinical trial PK analysis
 * (Optional) Rstudio <https://www.rstudio.com/>
 * (Optional) Github <https://github.com>
-* Data Science Fun R, 파이썬(Python), 데이터 과학 이야기 <https://dataninja.me>
+* Data Science Fun R, 파이썬(Python), 
+* 데이터 과학 이야기 <https://dataninja.me>
+
 마지막에 논문 발표를 하게 됩니다.
+
+## Subintern 2018-winter
+
+임상약리학과 서브인턴 2018 겨울 과정입니다. 
+
+### Participants
+
+* 최민아
+* 현태환
+* 최광희
+* 박현수
+* 박유라
+* 최백용
 
 ## Subintern 2017
 
-임상약리학과 서브인턴 2017 Github입니다.
+임상약리학과 서브인턴 2017 Github입니다. `2017-07-31 - 2017-08-11`
 
 ### Curriculum
 
@@ -24,26 +39,19 @@
 
 * [조하혜 firstjhh](https://github.com/firstjhh)
 
-### Period
-
-* 2017-07-31 - 2017-08-11
-
 ### Final Presentation
 
 TBD
 
 ## Subintern 2016
 
-임상약리학과 서브인턴 2016 Github입니다.
+임상약리학과 서브인턴 2016 Github입니다. `2016-08-01 - 2016-08-12`
 
 ### Participants
 
 * [이종희 jennylee9085](https://github.com/jennylee9085)
 * [어지안 harooyan94](https://github.com/harooyan94)
 
-### Period
-
-* 2016-08-01 - 2016-08-12
 
 ### Final Presentation
 

@@ -1,5 +1,7 @@
 # Subinterns of Asan Medical Center
 
+서울아산병원 임상약리학과 서브인턴을 위해 사용되는 저장소입니다.
+
 # 오자마자 여러분이 해야할 일
 
 - [Github](https://github.com)에 계정을 만듭니다.
@@ -20,6 +22,12 @@
 * 데이터 과학 이야기 <https://dataninja.me>
 
 마지막에 논문 발표를 하게 됩니다.
+
+## Subintern 2018-summer
+
+### Participants
+
+* 조은민
 
 ## Subintern 2018-winter
 

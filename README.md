@@ -1,6 +1,7 @@
 # Subinterns of Asan Medical Center
 
-서울아산병원 임상약리학과 서브인턴을 위해 사용되는 저장소입니다.
+> 서울아산병원 임상약리학과 서브인턴을 위해 사용되는 저장소입니다.  
+> This repository is used for teaching subinterns (students) of Dept of Clinical Pharmacology and Therapeutics, Asan Medical Center, Seoul.
 
 # 오자마자 여러분이 해야할 일
 
@@ -25,6 +26,8 @@
 
 ## Subintern 2018-summer
 
+`2018-07-30 - 2017-08-10`
+
 ### Participants
 
 * 조은민
@@ -44,7 +47,7 @@
 
 ## Subintern 2017
 
-임상약리학과 서브인턴 2017 Github입니다. `2017-07-31 - 2017-08-11`
+`2017-07-31 - 2017-08-11`
 
 ### Curriculum
 
@@ -60,7 +63,7 @@ TBD
 
 ## Subintern 2016
 
-임상약리학과 서브인턴 2016 Github입니다. `2016-08-01 - 2016-08-12`
+`2016-08-01 - 2016-08-12`  
 
 ### Participants
 

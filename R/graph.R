@@ -1,3 +1,14 @@
+library(tidyverse)
+
+# start - COPD ----
+
+read_csv('data-raw/COPD-FEV1-smoking.csv') %>% 
+  gather(status, FEV1, No_smoking:Smoking) %>% 
+  ggplot(aes(status, FEV1)) +
+  geom_point()
+
+# end - COPD ----
+
 # Loading
 PKRaw <- read.csv('data-raw/assay/Drug_X_PK.csv', stringsAsFactors = FALSE)
 
@@ -38,12 +49,21 @@ mean(unique(PKRaw$WT[PKRaw$GENE == 3]))
 library(dplyr)
 PKRaw %>% 
   group_by(GENE) %>% 
-  summarise(AGE.WT = mean(AGE), MEAN.WT = mean(WT), MEAN.HT = mean(HT))
+  summarise(MEAN.AGE = mean(AGE), MEAN.WT = mean(WT), MEAN.HT = mean(HT))
 
 PKRaw %>% 
   group_by(ID) %>% 
   summarise(Cmax = max(DV))
 
+head(PKRaw)
+tail(PKRaw)
+
+PKRaw %>% 
+  ggplot(aes(x=TIME, y=DV, group=ID, color=as.factor(Drug))) +
+  geom_line() +
+  geom_point()
+
+# Not a good idea. GENE may contain various Drug amount.
 PKRaw %>% 
   group_by(ID) %>% 
   mutate(RankDV = min_rank(desc(DV))) %>% 

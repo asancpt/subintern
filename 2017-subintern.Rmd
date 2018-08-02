@@ -3,9 +3,9 @@ title: "How to use R markdown"
 author: "AMC Subintern"
 date: '2017-08-02'
 output:
-  word_document:
-    toc: yes
   html_document:
+    toc: yes
+  word_document:
     toc: yes
 bibliography: references/myref.bib
 ---
@@ -66,6 +66,7 @@ Writing medical papers can be done by Rmarkdown as well as using [Endnote](http:
 | 한성필 | 녹차라떼 | 4000원 |
 | 배균섭 | 케이크 | 14000원 |
 | 임형석 | 아이스아메리카노 | 3000원 |
+| 조은민 | 코카콜라 | 1500원 |
 
 So now we learned several things.
 

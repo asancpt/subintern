@@ -30,7 +30,7 @@
 
 ### Participants
 
-* 조은민
+* [조은민 eunmin309](https://github.com/eunmin309)
 
 ## Subintern 2018-winter
 

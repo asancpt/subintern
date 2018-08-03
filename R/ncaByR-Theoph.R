@@ -1,4 +1,5 @@
-library(NonCompart) # NonCompartmental Analysis
+# install.packages('NonCompart')
+library(NonCompart) # NonCompartmental Analysis package.
 library(tidyverse)
 
 # ?NonCompart
@@ -6,7 +7,7 @@ library(tidyverse)
 head(Theoph)
 
 # Theoph and Indometh data: dose in mg, conc in mg/L, time in h
-ncaTheoph <- NonCompart::tabNCA(Theoph, dose=320, concUnit="mg/L")
+ncaTheoph <- tblNCA(Theoph, dose=320, concUnit="mg/L")
 
 write.csv(ncaTheoph, 'data/ncaTheoph.csv', row.names = FALSE)
 
@@ -15,7 +16,7 @@ write.csv(ncaTheoph, 'data/ncaTheoph.csv', row.names = FALSE)
 
 ncaTheophLong <- ncaTheoph %>%
   as.tibble() %>% 
-  arrange(ID) %>% 
+  arrange(Subject) %>% 
   gather(key = 'PKparameter', value = 'PKparameterValue', b0:CLFP)
 
 write.csv(ncaTheophLong, 'data/ncaTheophLong.csv', row.names = FALSE)

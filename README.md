@@ -31,6 +31,7 @@
 ### Participants
 
 * [조은민 eunmin309](https://github.com/eunmin309)
+    * 논문 발표: Adalimumab
 
 ## Subintern 2018-winter
 
@@ -68,11 +69,6 @@ TBD
 ### Participants
 
 * [이종희 jennylee9085](https://github.com/jennylee9085)
+    * 논문 발표: [Cardiovascular pharmacogenomics](https://www.slideshare.net/secret/NWM4z342DhqgdA)
 * [어지안 harooyan94](https://github.com/harooyan94)
-
-
-### Final Presentation
-
-* [jennylee9085 - Cardiovascular pharmacogenomics](https://www.slideshare.net/secret/NWM4z342DhqgdA)
-* [harooyan94 - Pharmacogenetics of CYP2D6 and Tamoxifen therapy](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)
-
+    * 논문 발표: [Pharmacogenetics of CYP2D6 and Tamoxifen therapy](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)

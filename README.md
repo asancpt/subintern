@@ -31,7 +31,7 @@
 ### Participants
 
 * [조은민 eunmin309](https://github.com/eunmin309)
-    * 논문 발표: Adalimumab
+    * 논문 발표: ["Comparison of the pharmacokinetics, safety, and immunogenicity of MSB11022, a biosimilar of adalimumab, with Humira(®) in healthy subjects." Br J Clin Pharmacol. 2016 Oct;82(4):983-93. doi: 10.1111/bcp.13039.](https://www.ncbi.nlm.nih.gov/pubmed/?term=27285856) [Slideshare](https://www.slideshare.net/secret/4EvS6hpsTHNXGC)
 
 ## Subintern 2018-winter
 
@@ -69,6 +69,6 @@ TBD
 ### Participants
 
 * [이종희 jennylee9085](https://github.com/jennylee9085)
-    * 논문 발표: [Cardiovascular pharmacogenomics](https://www.slideshare.net/secret/NWM4z342DhqgdA)
+    * 논문 발표: Cardiovascular pharmacogenomics [Slideshare](https://www.slideshare.net/secret/NWM4z342DhqgdA)
 * [어지안 harooyan94](https://github.com/harooyan94)
-    * 논문 발표: [Pharmacogenetics of CYP2D6 and Tamoxifen therapy](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)
+    * 논문 발표: Pharmacogenetics of CYP2D6 and Tamoxifen therapy [Slideshare](https://www.slideshare.net/secret/CQu4g8jF4Ycb9L)

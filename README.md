@@ -31,12 +31,12 @@
 
 ### Participants
 
-* 김자윤
+* 김자윤 Jayoon-Kim
 * 서인석
-* 신영하
+* 신영하 drshin93
 * 박정빈
 * 이소희
-* 
+* 성윤수 yoonsoo940412
 
 ## Subintern 2018-summer
 

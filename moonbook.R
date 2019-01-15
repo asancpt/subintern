@@ -1,4 +1,7 @@
-install.packages("tidyverse")
+# install.packages("tidyverse")
+# install.packages('moonBook')
+# install.packages('data.table')
+
 library(tidyverse)
 
 mpg %>%
@@ -7,9 +10,6 @@ mpg %>%
   arrange(mean) %>% 
   tail() %>% 
   View()
-
-install.packages('moonBook')
-install.packages('data.table')
 
 library(moonBook)
 
@@ -20,3 +20,4 @@ acs %>%
             TC_mean = median(TC, na.rm = TRUE)) %>% 
   arrange(HDLC_mean) %>% 
   head()
+

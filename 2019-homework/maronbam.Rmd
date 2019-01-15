@@ -1,6 +1,8 @@
 ---
 title: "Smoking 여부에 따른 ACS 발병 연령의 차이"
+subtitle: "서울아산병원 임상약리학과 2019 동계 서브인턴"
 author: "박정빈"
+date: "2019-01-15"
 header-includes:
   - \usepackage{kotex}
 mainfont: NanumGothic
@@ -8,6 +10,10 @@ output:
   pdf_document:
     latex_engine: xelatex
 ---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE)
+```
 
 ## 서론
 
@@ -22,10 +28,6 @@ output:
 ## 결과
 
 Non-smoker, Ex-smoker, Smoker 중 smoker의 ACS 발병 연령이 낮은 것으로 나타났다.
-
-```{r setup}
-knitr::opts_chunk$set(message=FALSE, warning=FALSE)
-```
 
 ```{r}
 library(tidyverse)

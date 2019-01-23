@@ -1,88 +1,93 @@
 ---
-title: "How to use R markdown"
-author: "AMC Subintern"
-date: '2017-08-02'
 output:
-  html_document:
-    toc: yes
-  word_document:
-    toc: yes
-bibliography: references/myref.bib
+  word_document: default
+  html_document: default
 ---
 
-# Introduction
 
-이것은 R 마크다운입니다.
+환영합니다.
+
+2019년 서브인턴 일정을 아래처럼 댓글로 기록해 주십시오. 2-3일 주기로 업데이트 하면 좋을 것 같습니다.
+
+---
+
+# CSF Immunoglobulin 패턴과 다발성 경화증 중증도와의 상관관계
+
+**한성필**, 김자윤, 서인석, 신영하, 박정빈, 이소희 성윤수
+
+## 초록
+CSF Immunoglobulin 패턴과 다발성 경화증 중증도와의 상관관계는 높지 않다. (r=0.2, p=0.47)
+
+## 서론
+CSF Immunoglobulin 패턴과 다발성 경화증 중증도와의 상관관계에 대해서 많은 의견이 있으나 한국인에서 잘 알려지지 않았다.
+
+## Materials and Methods
+~~d어쩌고~~~
+
+## 결과
+
+
+- CSF Immunoglobulin 패턴과 다발성 경화증 중증도는 크지 않다.
+- CSF Immunoglobulin 패턴은 크게 ~가지로 나뉠 수 있다.
+- 다발성 경화증의 중증도는 ~~였다.
+
+1. CSF Immunoglobulin 패턴과 다발성 경화증 중증도는 크지 않다.
+2. CSF Immunoglobulin 패턴은 크게 ~가지로 나뉠 수 있다.
+3. 다발성 경화증의 중증도는 ~~였다.
+
+---
+
+3. CSF Immunoglobulin 패턴과 다발성 경화증 중증도는 크지 않다.
+1. 다발성 경화증의 중증도는 ~~였다.
+2. CSF Immunoglobulin 패턴은 크게 ~가지로 나뉠 수 있다.
+
+## Discussion
+
+
+
+| 이름 | 메뉴 | 학년 |
+|---|--:|---|
+|한성필|카페라떼|0|
+|김자윤|카페라떼|2|
+|서인석|아이스아메리카노|2|
+|신영하|카페라떼|3|
+|박정빈|아이스라떼|3|
+|이소희|녹차라떼|2|
+|성윤수|아이스모카|3|
+
+
+
+## Figures
+
+```{r, echo = FALSE, message = FALSE, warning=FALSE}
+library(ggplot2)
+qplot(data = mpg, x = drv, y = hwy, geom = "boxplot", colour = drv)
+```
+
+Figure 1. Boxplot of drv and hwy.
+
+
+
+![Figure 2. CSF Immunoglobulin](https://jamanetwork.com/data/journals/neur/24176/noc110088f1.jpeg)
+
+
+![Figure 3. Kitty](kitty.png)
+
+## Tables
 
 ```{r}
-# install.packages('tidyverse')
+knitr::kable(head(Theoph, 20), caption = "Table 1. Overview of Theoph dataset")
+```
+
+```{r}
+library(moonBook)
 library(tidyverse)
+
+acs %>% 
+  group_by(Dx, smoking) %>% 
+  summarise(HDLC_mean = median(HDLC, na.rm = TRUE),
+            LDLC_mean = median(LDLC, na.rm = TRUE),
+            TC_mean = median(TC, na.rm = TRUE)) %>% 
+  arrange(HDLC_mean) %>% 
+  knitr::kable(caption = "Table 2. Smoking and cardiovascular disease")
 ```
-
-# Materials and Methods
-
-Theoph의 앞부분입니다.
-
-```{r}
-head(Theoph)
-```
-
-Theoph의 뒷부분입니다.
-
-```{r}
-tail(Theoph)
-```
-
-# Results
-
-그림을 그려볼까요
-
-```{r}
-plotTheoph <- Theoph %>% 
-  ggplot(aes(x = Time, y = conc, group = Subject, color = Subject)) +
-  geom_point() +
-  geom_line()
-plotTheoph
-```
-
-Let's draw individually.
-
-```{r}
-plotTheoph +
-  facet_wrap( ~ Subject, ncol = 4)
-```
-
-Theoph is used for treating asthma and the other allergic diseases. [@subintern1]
-
-Omalizumab is also used for treating asthma [@maltby2017omalizumab]
-
-# Discussion
-
-Writing medical papers can be done by Rmarkdown as well as using [Endnote](http://endnote.com/), Mendeley <https://www.mendeley.com/>, refworks, and zotero.
-
-| 이름 | 메뉴 | 가격 |
-| :-- | :-- | --: |
-| 조하혜 | 카페라떼 | 3500원 |
-| 한성필 | 녹차라떼 | 4000원 |
-| 배균섭 | 케이크 | 14000원 |
-| 임형석 | 아이스아메리카노 | 3000원 |
-| 조은민 | 코카콜라 | 1500원 |
-
-So now we learned several things.
-
-- R
-- R packages - tidyverse, ggplot2
-- Drawing figures by R
-- Rmarkdown
-
-Next time we will learn these
-
-1. How to use basic NCA R package 
-1. How to use Phoenix WinNonLin software
-1. How to become successful clinical investigator
-
-[Online Figure](http://www.radiokorea.com/images/news/2017/02/17/251890/1.gif)
-
-![Online Figure](http://www.radiokorea.com/images/news/2017/02/17/251890/1.gif)
-
-# Reference
